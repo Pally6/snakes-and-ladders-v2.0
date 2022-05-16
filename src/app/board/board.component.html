@@ -1,0 +1,100 @@
+<div class="col-md-2 edit-name-btn">
+  <button (click)="editName()" class="btn btn-primary">Edit Names</button> 
+</div>
+<div *ngIf="isWinner" class="win-modal">
+  <div class="win-window">
+    <h1>Congratulation {{ winPlayer }} you won the Game !</h1>
+    <button (click)="resetGame()" class="btn btn-primary">Exit</button>
+  </div>
+</div>
+<div *ngIf="isEditName" class="name-edit">
+  <div class="row">
+    <form (ngSubmit)="editName()" #pName="ngForm">
+      <label for="p1name"> Enter name</label>
+      <input
+        type="text"
+        placeholder="Player 1"
+        id="p1name"
+        class="form-control"
+        name="p1name"
+        [(ngModel)]="players[0].name">
+      <label for="p2name"> Enter name</label>
+      <input
+        type="text"
+        placeholder="Player 2"
+        id="p2name"
+        class="form-control"
+        name="p2name"
+        [(ngModel)]="players[1].name">
+      <label for="p3name"> Enter name</label>
+      <input
+        type="text"
+        placeholder="Player 3"
+        id="p3name"
+        class="form-control"
+        name="p3name"
+        [(ngModel)]="players[2].name">
+      <label for="p4name"> Enter name</label>
+      <input
+        type="text"
+        placeholder="Player 4"
+        id="p4name"
+        class="form-control"
+        name="p4name"
+        [(ngModel)]="players[3].name"> 
+      <button type="submit" class="btn btn-primary">Change Names</button> 
+      <button id="cancel-btn-desktop" type="button" (click)="onCancel()" class="btn btn-danger">Cancel</button>
+      <button id="cancel-btn-mobile" type="button" (click)="onCancel()" class="close">X</button>
+    </form>
+  </div>
+</div>
+<div id="align-board" class="row">
+  <div  id="board-grid">
+    <div
+      *ngFor="let boardNumber of boardNumbers; let i = index"
+      id="p{{ i + 1 }}"
+      class="board-square image-responsive">
+      <span>{{ boardNumber }}</span>
+      <div id="player-container">
+        <span
+          id="player1"
+          [ngClass]="players[0].playerPosition == i ? 'player-one-active' : ''"></span>
+        <span
+          id="player2"
+          [ngClass]="players[1].playerPosition == i ? 'player-two-active' : ''"></span>
+        <span
+          id="player3"
+          [ngClass]="players[2].playerPosition == i ? 'player-three-active' : ''"></span>
+        <span
+          id="player4"
+          [ngClass]="players[3].playerPosition == i ? 'player-four-active' : ''"></span>
+      </div>
+    </div>
+    <div id="new-game">
+      <button (click)="resetGame()" class="btn btn-success">New Game</button>
+    </div>
+  </div>
+  <div id="player-board" class="row">
+    <div id="name-for-media" class="col-md-3" *ngFor="let player of players; let i = index">
+        <span id="current-player" *ngIf="player == currentPlayer">Your turn:</span>
+        <br>
+        <span id="player{{i}}" class="player-name">{{ player.name }}</span>
+        <br/>
+        <br/>
+        <button
+        (click)="throwDice(player.name, i)"
+        id="roll-dice-btn"
+        type="button"
+        [disabled]="player != currentPlayer"
+        class="btn btn-primary">Throw Dice</button>
+    </div>
+    <div id="player-info">
+      <span id="dice-box" *ngIf="diceRolled"
+        >[ {{ dice1 }} : {{ dice2 }} ]</span>
+      <span class="message-box" *ngIf="doublesMessage">{{ messageForDoubles }}</span>
+      <span class="message-box" *ngIf="shootMessage">{{ messageForOverShoot }}</span>
+      <span class="message-box" *ngIf="caseMessage">{{ messageForCases }}</span>
+    </div>
+  </div>
+  <div id="end" class="row"></div>
+</div>

@@ -1,0 +1,411 @@
+
+#align-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#end {
+    padding-bottom: 30%;
+}
+
+#board-grid {
+    width: 43rem;
+    height: 40rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    padding-left: 0;
+}
+
+.name-edit {
+    position: absolute;
+    top: 17%;
+    background-color: #dbdbdb;
+    left: 34.6%;
+    width: 30%;
+    font-size: 1.2rem;
+    padding-top: 0.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    height: 35%;
+    z-index: 1;
+    margin-bottom: 1%;
+    border: 1px solid;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 2% 2%;
+}
+
+.edit-name-btn {
+    width: 25%;
+    position: relative;
+    left: 46.7%;
+}
+
+#p2{grid-row-start: 10; grid-column-start: 1;}
+#p3{grid-row-start: 10; grid-column-start: 2;}
+#p4{grid-row-start: 10; grid-column-start: 3;}
+#p5{grid-row-start: 10; grid-column-start: 4;}
+#p6{grid-row-start: 10; grid-column-start: 5;}
+#p7{grid-row-start: 10; grid-column-start: 6;}
+#p8{grid-row-start: 10; grid-column-start: 7;}
+#p9{grid-row-start: 10; grid-column-start: 8;}
+#p10{grid-row-start: 10; grid-column-start: 9;}
+#p11{grid-row-start: 10; grid-column-start: 10;}
+
+#p12{grid-row-start: 9; grid-column-start: 10;}
+#p13{grid-row-start: 9; grid-column-start: 9;}
+#p14{grid-row-start: 9; grid-column-start: 8;}
+#p15{grid-row-start: 9; grid-column-start: 7;}
+#p16{grid-row-start: 9; grid-column-start: 6;}
+#p17{grid-row-start: 9; grid-column-start: 5;}
+#p18{grid-row-start: 9; grid-column-start: 4;}
+#p19{grid-row-start: 9; grid-column-start: 3;}
+#p20{grid-row-start: 9; grid-column-start: 2;}
+#p21{grid-row-start: 9; grid-column-start: 1;}
+
+#p22{grid-row-start: 8; grid-column-start: 1;}
+#p23{grid-row-start: 8; grid-column-start: 2;}
+#p24{grid-row-start: 8; grid-column-start: 3;}
+#p25{grid-row-start: 8; grid-column-start: 4;}
+#p26{grid-row-start: 8; grid-column-start: 5;}
+#p27{grid-row-start: 8; grid-column-start: 6;}
+#p28{grid-row-start: 8; grid-column-start: 7;}
+#p29{grid-row-start: 8; grid-column-start: 8;}
+#p30{grid-row-start: 8; grid-column-start: 9;}
+#p31{grid-row-start: 8; grid-column-start: 10;}
+
+#p32{grid-row-start: 7; grid-column-start: 10;}
+#p33{grid-row-start: 7; grid-column-start: 9;}
+#p34{grid-row-start: 7; grid-column-start: 8;}
+#p35{grid-row-start: 7; grid-column-start: 7;}
+#p36{grid-row-start: 7; grid-column-start: 6;}
+#p37{grid-row-start: 7; grid-column-start: 5;}
+#p38{grid-row-start: 7; grid-column-start: 4;}
+#p39{grid-row-start: 7; grid-column-start: 3;}
+#p40{grid-row-start: 7; grid-column-start: 2;}
+#p41{grid-row-start: 7; grid-column-start: 1;}
+
+#p42{grid-row-start: 6; grid-column-start: 1;}
+#p43{grid-row-start: 6; grid-column-start: 2;}
+#p44{grid-row-start: 6; grid-column-start: 3;}
+#p45{grid-row-start: 6; grid-column-start: 4;}
+#p46{grid-row-start: 6; grid-column-start: 5;}
+#p47{grid-row-start: 6; grid-column-start: 6;}
+#p48{grid-row-start: 6; grid-column-start: 7;}
+#p49{grid-row-start: 6; grid-column-start: 8;}
+#p50{grid-row-start: 6; grid-column-start: 9;}
+#p51{grid-row-start: 6; grid-column-start: 10;}
+
+#p52{grid-row-start: 5; grid-column-start: 10;}
+#p53{grid-row-start: 5; grid-column-start: 9;}
+#p54{grid-row-start: 5; grid-column-start: 8;}
+#p55{grid-row-start: 5; grid-column-start: 7;}
+#p56{grid-row-start: 5; grid-column-start: 6;}
+#p57{grid-row-start: 5; grid-column-start: 5;}
+#p58{grid-row-start: 5; grid-column-start: 4;}
+#p59{grid-row-start: 5; grid-column-start: 3;}
+#p60{grid-row-start: 5; grid-column-start: 2;}
+#p61{grid-row-start: 5; grid-column-start: 1;}
+
+#p62{grid-row-start: 4; grid-column-start: 1;}
+#p63{grid-row-start: 4; grid-column-start: 2;}
+#p64{grid-row-start: 4; grid-column-start: 3;}
+#p65{grid-row-start: 4; grid-column-start: 4;}
+#p66{grid-row-start: 4; grid-column-start: 5;}
+#p67{grid-row-start: 4; grid-column-start: 6;}
+#p68{grid-row-start: 4; grid-column-start: 7;}
+#p69{grid-row-start: 4; grid-column-start: 8;}
+#p70{grid-row-start: 4; grid-column-start: 9;}
+#p71{grid-row-start: 4; grid-column-start: 10;}
+
+#p72{grid-row-start: 3; grid-column-start: 10;}
+#p73{grid-row-start: 3; grid-column-start: 9;}
+#p74{grid-row-start: 3; grid-column-start: 8;}
+#p75{grid-row-start: 3; grid-column-start: 7;}
+#p76{grid-row-start: 3; grid-column-start: 6;}
+#p77{grid-row-start: 3; grid-column-start: 5;}
+#p78{grid-row-start: 3; grid-column-start: 4;}
+#p79{grid-row-start: 3; grid-column-start: 3;}
+#p80{grid-row-start: 3; grid-column-start: 2;}
+#p81{grid-row-start: 3; grid-column-start: 1;}
+
+#p82{grid-row-start: 2; grid-column-start: 10;}
+#p83{grid-row-start: 2; grid-column-start: 9;}
+#p84{grid-row-start: 2; grid-column-start: 8;}
+#p85{grid-row-start: 2; grid-column-start: 7;}
+#p86{grid-row-start: 2; grid-column-start: 6;}
+#p87{grid-row-start: 2; grid-column-start: 5;}
+#p88{grid-row-start: 2; grid-column-start: 4;}
+#p89{grid-row-start: 2; grid-column-start: 3;}
+#p90{grid-row-start: 2; grid-column-start: 2;}
+#p91{grid-row-start: 2; grid-column-start: 1;}
+
+.board-square {
+    border: 2px solid;
+    width: 100%;
+    height: 100%;
+    padding-left: 3px;
+    background-color: rgb(235, 250, 75);
+}
+
+#player-board {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: -2%;
+}
+
+#roll-dice-btn {
+    width: 40%;
+}
+
+.player-name {
+    font-size: 1.2rem;
+}
+
+#player0 {
+    color: rgb(230, 23, 23);
+    font-weight: 500;
+}
+
+#player1 {
+   color: rgb(67, 13, 192); 
+   font-weight: 500;
+}
+
+#player2 {
+    color: rgb(83, 170, 48);
+    font-weight: 500;
+
+}
+
+#player3 {
+    color: rgb(134, 17, 119);
+    font-weight: 500;
+
+}
+
+#current-player {
+    color: rgb(189, 24, 24);
+    text-decoration: underline;
+    font-size: 1.4rem;
+    padding-bottom: 1%;
+    font-weight: 600;
+}
+
+.player-one-active {
+    position: relative;
+    width: 74%;
+    border: 4px solid rgb(230, 23, 23);
+    border-radius: 50% 50%;
+    display: block;
+}
+
+.player-two-active {
+    position: relative;
+    width: 74%;
+    border: 4px solid rgb(103, 42, 243);
+    border-radius: 50% 50%;
+    display: block;
+}
+
+.player-three-active {
+    position: relative;
+    width: 74%;
+    border: 4px solid rgb(49, 124, 19);
+    border-radius: 50% 50%;
+    display: block;
+}
+
+.player-four-active {
+    position: relative;
+    width: 74%;
+    border: 4px solid rgb(170, 10, 149);
+    border-radius: 50% 50%;
+    display: block;
+}
+
+#dice-box {
+    font-size: 1.6rem;
+    width: 21%;
+    color: rgba(46, 26, 156, 0.753);
+}
+
+.message-box {
+    font-size: 1.2rem;
+    padding-top: 5px;
+    color: red;
+}
+
+.win-window {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16%;
+    color: white;
+}
+
+.win-modal {
+    background-color: rgba(0,0,0,0.5);
+    width: 101%;
+    height: 142%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#new-game {
+    position: relative;
+    left: 423.4%;
+    top: 5%;
+    width: 200%;
+    padding-top: 2%;
+}
+
+@media only screen and (max-width: 795px) {
+    #new-game {
+        position: relative;
+        top: 0%;
+        left: 95%;
+    }
+
+    #board {
+        width: 45rem;
+        height: 35rem;
+        margin-bottom: 7%;
+    }
+
+    #name-for-media {
+        margin-top: 1%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .player-one-active {
+        position: relative;
+        width: 70%;
+        border: 2px solid rgb(230, 23, 23);
+        border-radius: 50% 50%;
+        display: block;
+    }
+    
+    .player-two-active {
+        position: relative;
+        width: 70%;
+        border: 2px solid rgb(103, 42, 243);
+        border-radius: 50% 50%;
+        display: block;
+    }
+    
+    .player-three-active {
+        position: relative;
+        width: 70%;
+        border: 2px solid rgb(49, 124, 19);
+        border-radius: 50% 50%;
+        display: block;
+    }
+    
+    .player-four-active {
+        position: relative;
+        width: 70%;
+        border: 2px solid rgb(170, 10, 149);
+        border-radius: 50% 50%;
+        display: block;
+    }
+
+    .edit-name-btn {
+        width: 25%;
+        position: relative;
+        left: 34.7%;
+    }
+
+    #cancel-btn-desktop {
+        display: none;
+    }
+
+}
+
+#cancel-btn-mobile {
+    position: relative;
+    background-color: #dbdbdb;
+    border-radius: 50%;
+    display: block;
+    top: -91%;
+    left: 85%;
+    height: 8%;
+    border: none;
+}
+
+
+#player-info {
+    height: 10%;
+    position: relative;
+    background-color: rgb(243, 243, 236);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.2%;
+}
+
+#p1 {
+    display: none;
+}
+
+#p23, #p38, #p36, #p49, #p41, #p84 {
+    background-color: rgb(219, 184, 86);
+}
+
+#p5, #p14, #p21, #p34, #p56, #p59, #p70, #p67, #p83, #p97 {
+    background-color: rgb(159, 124, 240);
+}
+
+#p10, #p18, #p31, #p24, #p35, #p40, #p42 #p49, #p57, #p64, #p73, #p78, #p87 {
+    background-color: rgb(206, 145, 229);
+}
+
+#p3, #p8, #p9, #p16, #p22, #p29, #p37, #p52, #p72, #p79, #p88 {
+    background-image: url('./green-up-arrow-shiny-bent-web-sign-vector-23980083.jpg');
+}
+
+#p15, #p39, #p27, #p32, #p43, #p45, #p68, #p85, #p92, #p95, #p99 {
+    background-color: rgba(5, 253, 46, 0.568)
+}
+
+#p17, #p47, #p50, #p63, #p65, #p75, #p90, #p93, #p96, #p100 {
+    background-image: url('./99-990159_lakota-language-consortium-lg-curved-red-arrow-left.png');
+}
+
+#p7, #p12, #p20, #p26, #p54, #p61, #p69, #p76, #p81, #p89 {
+    background-color: rgba(230, 19, 19, 0.596);
+}
+
+#p101 {
+    background-image: url('./istockphoto-518831649-1024x1024_77x59.jpg');
+}
+
+#p2 {
+    background-image: url('./15-155603_go-sign-clip-art-go-sign-clipart_77x50.png');
+    background-size: cover;
+}
+
+
+
+
+
+
+
+ 
