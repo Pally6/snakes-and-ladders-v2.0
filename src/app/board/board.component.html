@@ -1,5 +1,5 @@
 <div class="col-md-2 edit-name-btn">
-  <button (click)="editName()" class="btn btn-primary">Edit Names</button> 
+  <button *ngIf="players[0].playerPosition == 0" (click)="editName()" class="btn btn-primary">Edit Names</button> 
 </div>
 <div *ngIf="isWinner" class="win-modal">
   <div class="win-window">

@@ -332,6 +332,27 @@
         left: 34.7%;
     }
 
+    .name-edit {
+        position: absolute;
+        top: 17%;
+        background-color: #dbdbdb;
+        left: 34.6%;
+        width: 30%;
+        font-size: 1.2rem;
+        padding-top: 0.5%;
+        padding-left: 1%;
+        padding-right: 1%;
+        display: flex;
+        height: 42%;
+        z-index: 1;
+        margin-bottom: 1%;
+        border: 1px solid;
+        flex-direction: column;
+        align-content: space-around;
+        flex-wrap: wrap;
+        border-radius: 2% 2%;
+    }
+
     #cancel-btn-desktop {
         display: none;
     }
