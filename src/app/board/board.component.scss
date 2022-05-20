@@ -15,22 +15,22 @@
     position: relative;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: minmax(46px, 66.44px);
     grid-template-rows: repeat(10, 1fr);
-    padding-left: 0;
 }
 
 .name-edit {
+    background-color: #dbdbdb;
     position: absolute;
     top: 17%;
-    background-color: #dbdbdb;
-    left: 34.6%;
-    width: 30%;
+    left: 42.7%;
+    width: 14%;
+    height: 35%;
     font-size: 1.2rem;
     padding-top: 0.5%;
     padding-left: 1%;
     padding-right: 1%;
     display: flex;
-    height: 35%;
     z-index: 1;
     margin-bottom: 1%;
     border: 1px solid;
@@ -43,7 +43,7 @@
 .edit-name-btn {
     width: 25%;
     position: relative;
-    left: 46.7%;
+    left: 47.2%;
 }
 
 #p2{grid-row-start: 10; grid-column-start: 1;}
@@ -134,16 +134,27 @@
 #p80{grid-row-start: 3; grid-column-start: 2;}
 #p81{grid-row-start: 3; grid-column-start: 1;}
 
-#p82{grid-row-start: 2; grid-column-start: 10;}
-#p83{grid-row-start: 2; grid-column-start: 9;}
-#p84{grid-row-start: 2; grid-column-start: 8;}
-#p85{grid-row-start: 2; grid-column-start: 7;}
-#p86{grid-row-start: 2; grid-column-start: 6;}
-#p87{grid-row-start: 2; grid-column-start: 5;}
-#p88{grid-row-start: 2; grid-column-start: 4;}
-#p89{grid-row-start: 2; grid-column-start: 3;}
-#p90{grid-row-start: 2; grid-column-start: 2;}
-#p91{grid-row-start: 2; grid-column-start: 1;}
+#p82{grid-row-start: 2; grid-column-start: 1;}
+#p83{grid-row-start: 2; grid-column-start: 2;}
+#p84{grid-row-start: 2; grid-column-start: 3;}
+#p85{grid-row-start: 2; grid-column-start: 4;}
+#p86{grid-row-start: 2; grid-column-start: 5;}
+#p87{grid-row-start: 2; grid-column-start: 6;}
+#p88{grid-row-start: 2; grid-column-start: 7;}
+#p89{grid-row-start: 2; grid-column-start: 8;}
+#p90{grid-row-start: 2; grid-column-start: 9;}
+#p91{grid-row-start: 2; grid-column-start: 10;}
+
+#p92{grid-row-start: 1; grid-column-start: 10;}
+#p93{grid-row-start: 1; grid-column-start: 9;}
+#p94{grid-row-start: 1; grid-column-start: 8;}
+#p95{grid-row-start: 1; grid-column-start: 7;}
+#p96{grid-row-start: 1; grid-column-start: 6;}
+#p97{grid-row-start: 1; grid-column-start: 5;}
+#p98{grid-row-start: 1; grid-column-start: 4;}
+#p99{grid-row-start: 1; grid-column-start: 3;}
+#p100{grid-row-start: 1; grid-column-start: 2;}
+#p101{grid-row-start: 1; grid-column-start: 1;}
 
 .board-square {
     border: 2px solid;
@@ -274,7 +285,26 @@
     padding-top: 2%;
 }
 
+@media (max-height: 900px) {
+
+    .name-edit{
+        height: 51%;
+    }
+
+}
+
 @media only screen and (max-width: 795px) {
+
+    #board-grid {
+        width: 33rem;
+        height: 30rem;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-columns: minmax(44px, 48px);
+        grid-template-rows: repeat(10, 1fr);
+    }
+
     #new-game {
         position: relative;
         top: 0%;
@@ -329,21 +359,18 @@
     .edit-name-btn {
         width: 25%;
         position: relative;
-        left: 34.7%;
+        left: 41.4%;
     }
 
     .name-edit {
         position: absolute;
         top: 17%;
         background-color: #dbdbdb;
-        left: 34.6%;
+        left: 36.6%;
         width: 30%;
         font-size: 1.2rem;
-        padding-top: 0.5%;
-        padding-left: 1%;
-        padding-right: 1%;
+        padding: 0.5% 1% 1% 1%;
         display: flex;
-        height: 42%;
         z-index: 1;
         margin-bottom: 1%;
         border: 1px solid;
@@ -399,7 +426,7 @@
 }
 
 #p3, #p8, #p9, #p16, #p22, #p29, #p37, #p52, #p72, #p79, #p88 {
-    background-image: url('./green-up-arrow-shiny-bent-web-sign-vector-23980083.jpg');
+    background-image: url('../images/green-up-arrow-shiny-bent-web-sign-vector-23980083.jpg');
 }
 
 #p15, #p39, #p27, #p32, #p43, #p45, #p68, #p85, #p92, #p95, #p99 {
@@ -407,7 +434,7 @@
 }
 
 #p17, #p47, #p50, #p63, #p65, #p75, #p90, #p93, #p96, #p100 {
-    background-image: url('./99-990159_lakota-language-consortium-lg-curved-red-arrow-left.png');
+    background-image: url('../images/99-990159_lakota-language-consortium-lg-curved-red-arrow-left.png');
 }
 
 #p7, #p12, #p20, #p26, #p54, #p61, #p69, #p76, #p81, #p89 {
@@ -415,11 +442,12 @@
 }
 
 #p101 {
-    background-image: url('./istockphoto-518831649-1024x1024_77x59.jpg');
+    background-image: url('../images/istockphoto-518831649-1024x1024_77x59.jpg');
+    background-size: cover;
 }
-
+// 
 #p2 {
-    background-image: url('./15-155603_go-sign-clip-art-go-sign-clipart_77x50.png');
+    background-image: url('../images/15-155603_go-sign-clip-art-go-sign-clipart_77x50.png');
     background-size: cover;
 }
 
